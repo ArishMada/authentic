@@ -1,8 +1,11 @@
+# Import modules
+from fastapi import FastAPI, HTTPException
 from sqlalchemy import Column, Integer, String, DateTime
 from sqlalchemy.sql import func
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy import create_engine
+from passlib.hash import bcrypt  # use this module to encrypt or hash the passcode
 
 # Database URL setups
 # Create Database URL and Engine for user table
@@ -23,7 +26,8 @@ class User(UserBase):
 
     id = Column(Integer, primary_key=True)
     email = Column(String, unique=True, nullable=False)
-    password = Column(String, unique=False, nullable=False)
+    password = Column(String, nullable=False)
+    jwt_value = Column(String)  # jwt value token
 
 
 # User activity table model
@@ -50,7 +54,6 @@ ActivitySessionLocal = sessionmaker(
 )
 
 
-# Get DB
 def get_user_db():
     db = UserSessionLocal()
     try:
@@ -73,13 +76,16 @@ def create_tables():
     ActivityBase.metadata.create_all(bind=activity_engine)
 
 
-def create_new_account(email, password):
+def create_new_account(email: str, password: str, jwt_value: str):
     with get_user_db() as db:
         existing_user = db.query(User).filter_by(email=email).first()
         if existing_user:
-            print("Email is already registered.")
+            raise HTTPException(status_code=400, detail="Email is already registered.")
         else:
-            new_user = User(email=email, password=password)
+            hashed_password = bcrypt.hash(password)
+            new_user = User(
+                email=email, password=hashed_password, jwt_value=jwt_value
+            )  # credentials stored in jwt value
             db.add(new_user)
             db.commit()
-            print("Account created successfully!")
+            return {"message": "Account created successfully!"}
