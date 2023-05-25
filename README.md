@@ -16,3 +16,13 @@ Where we get the token so we can see it in https://jwt.io/
 And this is the result of implementing of OAUTH2
 
 ![image](https://github.com/ArishMada/authentic/assets/91464375/6132493f-1131-439e-a40e-7d7b0b054af7)
+
+-THE SQL Structure
+
+![image](https://github.com/ArishMada/authentic/assets/91464375/bbdb56fd-2c2c-4717-9e0d-194f910ece6a)
+
+-THE VALUE 
+
+![image](https://github.com/ArishMada/authentic/assets/91464375/060499f1-05d7-43cc-8d39-36a36b06570b)
+
+Like i said even the developer cant see the user password because it is hashed no CAP.
