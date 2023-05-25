@@ -26,3 +26,9 @@ And this is the result of implementing of OAUTH2
 ![image](https://github.com/ArishMada/authentic/assets/91464375/060499f1-05d7-43cc-8d39-36a36b06570b)
 
 Like i said even the developer cant see the user password because it is hashed no CAP.
+
+-Secret Key
+
+SECRET_KEY = secrets.token_hex(32)
+
+We implement library secrets for the secret key so it is also secret even for us. It is a must have for privacy&policy purposes, for me i don't really understand why.
