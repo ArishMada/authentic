@@ -32,3 +32,32 @@ Like i said even the developer cant see the user password because it is hashed n
 SECRET_KEY = secrets.token_hex(32)
 
 We implement library secrets for the secret key so it is also secret even for us. It is a must have for privacy&policy purposes, for me i don't really understand why.
+
+**FrontEndThings**
+
+-Login
+
+![image](https://github.com/ArishMada/authentic/assets/91464375/8bcb0015-baa3-4c11-b3ff-37a1ce8895d0)
+
+-After Login
+
+-Login No Account (error catch)
+
+![image](https://github.com/ArishMada/authentic/assets/91464375/7fb9a8e6-194f-4e01-ba7c-0c9b4dcd6162)
+
+
+![image](https://github.com/ArishMada/authentic/assets/91464375/2417577b-0e63-43e5-99be-877fae1b854f)
+
+-Signup
+
+![image](https://github.com/ArishMada/authentic/assets/91464375/0296710d-6773-4a5e-bc16-c73c8ce0e1b6)
+
+-After Signuo
+
+![image](https://github.com/ArishMada/authentic/assets/91464375/2d3c8b51-ba21-4aee-9589-90cbc3115df4)
+
+-Signup Double (error catch)
+
+![image](https://github.com/ArishMada/authentic/assets/91464375/adbe579d-a591-4922-80b9-05293c74e69d)
+
+
