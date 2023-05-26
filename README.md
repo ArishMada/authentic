@@ -41,12 +41,12 @@ We implement library secrets for the secret key so it is also secret even for us
 
 -After Login
 
+![image](https://github.com/ArishMada/authentic/assets/91464375/2417577b-0e63-43e5-99be-877fae1b854f)
+
 -Login No Account (error catch)
 
 ![image](https://github.com/ArishMada/authentic/assets/91464375/7fb9a8e6-194f-4e01-ba7c-0c9b4dcd6162)
 
-
-![image](https://github.com/ArishMada/authentic/assets/91464375/2417577b-0e63-43e5-99be-877fae1b854f)
 
 -Signup
 
