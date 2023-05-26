@@ -10,6 +10,8 @@ from sqlalchemy.sql import func
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy import create_engine
+from fastapi.middleware.cors import CORSMiddleware
+
 
 # Define your secret key
 SECRET_KEY = "your-secret-key"
@@ -44,18 +46,20 @@ oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 
 app = FastAPI()
 
-# CORS configuration
+#  CORS configuration
 origins = [
-    "http://localhost:3000",  # Add your frontend URL here
+    # "http://localhost",
+    # "http://localhost:3000",  # Add your frontend URL here
     # Add more origins if needed
-]
+    "*"
+ ]
 
 app.add_middleware(
-    CORSMiddleware,
-    allow_origins=origins,
-    allow_credentials=True,
-    allow_methods=["GET", "POST", "PUT", "DELETE"],
-    allow_headers=["*"],
+     CORSMiddleware,
+     allow_origins=origins,
+     allow_credentials=True,
+     allow_methods=["GET", "POST", "PUT", "DELETE"],
+     allow_headers=["*"],
 )
 
 def verify_password(plain_password, hashed_password):

@@ -28,6 +28,8 @@ const Signup = () => {
         console.log("Signup successful");
         setError("Successfull");
         // Perform any desired actions after successful signup
+        setEmail("")
+        setPassword("")
       } else {
         // Handle error response from the API
         const errorData = await response.json();

@@ -44,6 +44,7 @@ const Login = () => {
         // Handle error response from the API
         const errorData = await response.json();
         setError(errorData.detail);
+        setPassword("")
       }
     } catch (error) {
       console.log("Error:", error);
@@ -52,15 +53,19 @@ const Login = () => {
     }
   };
   
-  
+  const handleLogout = () => {
+    setLoggedIn(false);
+  };
+
 
   return (
     <div className="login">
-      <div className="icon">
-        <FaDoorOpen />
-      </div>
-      <h1>Login</h1>
       {!loggedIn ? (
+        <>
+        <div className="icon">
+          <FaDoorOpen />
+        </div>
+          <h1>Login</h1>
         <form onSubmit={handleSubmit}>
           <input
             autoFocus
@@ -78,9 +83,11 @@ const Login = () => {
           <button type="submit">Login</button>
           {error && <p className="error">{error}</p>}
         </form>
+        </>
       ) : (
         <>
         {loggedIn && <h2>{greeting}</h2>}
+        <button onClick={handleLogout} className="logout">Logout</button>
         </>
       )}
     </div>

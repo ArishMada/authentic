@@ -63,3 +63,20 @@
     background-color: #2a1a55;
     cursor: pointer;
 }
+
+.login button.logout {
+    width: 30%;
+    padding: 10px;
+    background-color: #452b8b;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: 0.99rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.login button.logout:hover {
+    background-color: #2a1a55;
+    cursor: pointer;
+}
