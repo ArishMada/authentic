@@ -62,4 +62,8 @@ The system would then display a pop-up suggesting that the signup process is suc
 When a username has already been used, the pop-up will appear suggesting that username is already used and that another type of email/username is needed. This can also show error if for example password is not filled, invalid credentials, etc.
 ![image](https://github.com/ArishMada/authentic/assets/91464375/adbe579d-a591-4922-80b9-05293c74e69d)
 
-
+# Members
+1. ![](https://github.com/ArishMada/authentic/blob/master/gambar/Screenshot%202023-05-26%20110355.png)
+2. ![](https://github.com/ArishMada/authentic/blob/master/gambar/Screenshot%202023-05-26%20110441.png)
+3. ![](https://github.com/ArishMada/authentic/blob/master/gambar/Screenshot%202023-05-26%20110507.png)
+4. ![](https://github.com/ArishMada/authentic/blob/master/gambar/Screenshot%202023-05-26%20110521.png)
