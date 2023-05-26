@@ -58,8 +58,12 @@ The users will be prompt to create an account by inputting their email address a
 The system would then display a pop-up suggesting that the signup process is successful and that the account has been created. The new credentials added would be stored inside of the database.
 ![image](https://github.com/ArishMada/authentic/assets/91464375/2d3c8b51-ba21-4aee-9589-90cbc3115df4)
 
--Signup Double (error catch)
+## Signup Double (error catch)
 When a username has already been used, the pop-up will appear suggesting that username is already used and that another type of email/username is needed. This can also show error if for example password is not filled, invalid credentials, etc.
 ![image](https://github.com/ArishMada/authentic/assets/91464375/adbe579d-a591-4922-80b9-05293c74e69d)
 
-
+# Members
+![](https://github.com/ArishMada/authentic/blob/master/gambar/Screenshot%202023-05-26%20110355.png)
+![](https://github.com/ArishMada/authentic/blob/master/gambar/Screenshot%202023-05-26%20110441.png)
+![](https://github.com/ArishMada/authentic/blob/master/gambar/Screenshot%202023-05-26%20110507.png)
+![](https://github.com/ArishMada/authentic/blob/master/gambar/Screenshot%202023-05-26%20110521.png)
