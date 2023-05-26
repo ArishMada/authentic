@@ -41,8 +41,8 @@ The user is prompt to input the email address and password of the account. Both 
 ![image](https://github.com/ArishMada/authentic/assets/91464375/8bcb0015-baa3-4c11-b3ff-37a1ce8895d0)
 
 ## After Login
-The users will be greeted with their account name/username to which the login has been successful.
-![image](https://github.com/ArishMada/authentic/assets/91464375/2417577b-0e63-43e5-99be-877fae1b854f)
+The users will be greeted with their account name/username to which the login has been successful. And logout button would be available for exiting their account. Which would erased all inputed values to be available for the next login.
+![image](https://github.com/ArishMada/authentic/blob/master/gambar/Capture%20d'%C3%A9cran%202023-05-26%20225428.png)
 
 ## Login No Account (error catch)
 Invalid credentials would immediately be rejected. This is due to the fact that there are no valid credentials of the inputs listed inside of the DB.
